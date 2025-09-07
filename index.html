@@ -202,10 +202,31 @@
             background: rgba(255, 154, 0, 0.1);
         }
         
+        /* Fix hero-visual for mobile */
         .hero-visual {
             flex: 1;
             position: relative;
             height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* On small screens stack dresses vertically */
+        @media (max-width: 768px) {
+            .dress-container {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                height: auto;
+                position: relative;
+            }
+            .dress-img {
+                position: relative;
+                width: 30%;
+                max-width: 120px;
+                height: auto;
+            }
         }
         
         /* Animated Dresses */
@@ -771,3 +792,4 @@
 </body>
 
 </html>
+
